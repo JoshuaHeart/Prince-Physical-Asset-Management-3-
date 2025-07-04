@@ -26,10 +26,15 @@
         .top-banner {
             background-color: var(--primary-color);
             color: white;
-            padding: 2em 2em; /* Increased height */
+            padding: 2em;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+        }
+
+        .logo-title {
+            display: flex;
+            align-items: center;
         }
 
         .top-banner img {
@@ -37,43 +42,40 @@
             margin-right: 20px;
         }
 
-        .title-container {
-            display: flex;
-            align-items: center;
-        }
-
         .top-banner h1 {
             margin: 0;
-            font-size: 1.8em;
+            font-size: 1.5em;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .top-banner nav {
+            display: flex;
+            gap: 2em;
+            text-align: center;
+        }
+
+        .top-banner nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.9em;
+        }
+
+        .top-banner nav a:hover {
+            text-decoration: none;
         }
 
         .tagline-banner {
             background-color: var(--tagline-color);
             color: white;
             text-align: center;
-            padding: 0.5em 2em; /* Thinner height */
-            font-size: 1em;
+            padding: 0.5em 2em;
+            font-size: 0.8em;
             font-family: Arial, sans-serif;
             font-weight: bold;
-        }
-
-        nav {
-            background-color: var(--nav-color);
-            display: flex;
-            justify-content: center;
-            padding: 1em;
-        }
-
-        nav a {
-            color: var(--nav-text-color);
-            margin: 0 1em;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
         }
 
         main {
@@ -106,22 +108,21 @@
 </head>
 <body>
     <div class="top-banner">
-        <div class="title-container">
+        <div class="logo-title">
             <img src="logo.png" alt="Prince Logo">
             <h1>Prince Physical Asset Management Services</h1>
         </div>
+        <nav>
+            <a href="#services">📋<br>Our Services</a>
+            <a href="#activities">🏭<br>Business Activities</a>
+            <a href="#strategy">📈<br>Company Strategy</a>
+            <a href="#contact">📞<br>Contact Info</a>
+        </nav>
     </div>
 
     <div class="tagline-banner">
         <p>Empowering sustainable industry through expert asset management.</p>
     </div>
-
-    <nav>
-        <a href="#services">Our Services</a>
-        <a href="#activities">Business Activities</a>
-        <a href="#strategy">Company Strategy</a>
-        <a href="#contact">Contact</a>
-    </nav>
 
     <main>
         <section id="services">
