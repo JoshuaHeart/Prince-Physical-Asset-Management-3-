@@ -7,9 +7,13 @@
     <style>
         :root {
             --primary-color: #002b45;
-            --accent-color: #0077c2;
+            --tagline-color: #0077c2;
+            --nav-color: #ffffff;
+            --nav-text-color: #002b45;
             --background-color: #f8f9fb;
             --text-color: #333;
+            --heading-color: #002b45;
+            --highlight-color: #d4af37;
         }
 
         body {
@@ -19,35 +23,57 @@
             color: var(--text-color);
         }
 
-        header {
+        .top-banner {
             background-color: var(--primary-color);
             color: white;
-            padding: 2em;
-            text-align: center;
+            padding: 2em 2em; /* Increased height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        header img {
-            max-width: 180px;
-            display: block;
-            margin: 0 auto 1em;
+        .top-banner img {
+            max-width: 150px;
+            margin-right: 20px;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .top-banner h1 {
+            margin: 0;
+            font-size: 1.8em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .tagline-banner {
+            background-color: var(--tagline-color);
+            color: white;
+            text-align: center;
+            padding: 0.5em 2em; /* Thinner height */
+            font-size: 1em;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
         }
 
         nav {
-            background-color: var(--accent-color);
+            background-color: var(--nav-color);
             display: flex;
             justify-content: center;
             padding: 1em;
         }
 
         nav a {
-            color: white;
+            color: var(--nav-text-color);
             margin: 0 1em;
             text-decoration: none;
             font-weight: bold;
         }
 
         nav a:hover {
-            text-decoration: none;
+            text-decoration: underline;
         }
 
         main {
@@ -61,7 +87,7 @@
         }
 
         h2 {
-            color: var(--accent-color);
+            color: var(--heading-color);
             padding-bottom: 0.2em;
         }
 
@@ -79,11 +105,16 @@
     </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Prince Logo">
-        <h1>Prince Physical Asset Management Services</h1>
+    <div class="top-banner">
+        <div class="title-container">
+            <img src="logo.png" alt="Prince Logo">
+            <h1>Prince Physical Asset Management Services</h1>
+        </div>
+    </div>
+
+    <div class="tagline-banner">
         <p>Empowering sustainable industry through expert asset management.</p>
-    </header>
+    </div>
 
     <nav>
         <a href="#services">Our Services</a>
