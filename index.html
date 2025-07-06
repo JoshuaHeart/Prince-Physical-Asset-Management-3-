@@ -26,7 +26,7 @@
         .top-banner {
             background-color: var(--primary-color);
             color: white;
-            padding: 2em;
+            padding: 2.5em 2em;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -44,17 +44,17 @@
 
         .top-banner h1 {
             margin: 0;
-            font-size: 1.5em;
+            font-size: 2em;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        .top-banner nav {
+        nav {
             display: flex;
             gap: 2em;
             text-align: center;
         }
 
-        .top-banner nav a {
+        nav a {
             color: white;
             text-decoration: none;
             font-weight: bold;
@@ -64,18 +64,22 @@
             font-size: 0.9em;
         }
 
-        .top-banner nav a:hover {
-            text-decoration: none;
-        }
-
         .tagline-banner {
             background-color: var(--tagline-color);
             color: white;
             text-align: center;
             padding: 0.5em 2em;
-            font-size: 0.8em;
+            font-size: 0.9em;
             font-family: Arial, sans-serif;
             font-weight: bold;
+        }
+
+        .hero-image {
+            background-image: url('industrial_banner.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            width: 100%;
         }
 
         main {
@@ -124,6 +128,8 @@
         <p>Empowering sustainable industry through expert asset management.</p>
     </div>
 
+    <div class="hero-image"></div>
+
     <main>
         <section id="services">
             <h2>Our Services</h2>
@@ -168,3 +174,4 @@
     </footer>
 </body>
 </html>
+
