@@ -26,7 +26,7 @@
         .top-banner {
             background-color: var(--primary-color);
             color: white;
-            padding: 2.5em 2em;
+            padding: 2em;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -44,17 +44,17 @@
 
         .top-banner h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 1.5em;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        nav {
+        .top-banner nav {
             display: flex;
             gap: 2em;
             text-align: center;
         }
 
-        nav a {
+        .top-banner nav a {
             color: white;
             text-decoration: none;
             font-weight: bold;
@@ -64,12 +64,16 @@
             font-size: 0.9em;
         }
 
+        .top-banner nav a:hover {
+            text-decoration: none;
+        }
+
         .tagline-banner {
             background-color: var(--tagline-color);
             color: white;
             text-align: center;
             padding: 0.5em 2em;
-            font-size: 0.9em;
+            font-size: 0.8em;
             font-family: Arial, sans-serif;
             font-weight: bold;
         }
@@ -78,7 +82,7 @@
             background-image: url('construction_with_digital.png');
             background-size: cover;
             background-position: center;
-            height: 550px;
+            height: 300px;
             width: 100%;
         }
 
@@ -100,6 +104,27 @@
         ul {
             padding-left: 1.5em;
             line-height: 1.8;
+        }
+
+        #activities {
+            position: relative;
+            background-image: url('activities_background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            padding: 2em;
+            border-radius: 10px;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        #activities::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: -1;
         }
 
         footer {
